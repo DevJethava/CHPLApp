@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400"
+        android:layout_margin="@dimen/margin_8"
+        app:cardCornerRadius="@dimen/margin_8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_400"
+            android:layout_marginBottom="@dimen/margin_4"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50"
+                android:layout_marginHorizontal="@dimen/margin_8">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mbBack"
+                    style="@style/dialog_close_button"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/lbl_book_service"
+                    android:textSize="@dimen/font_16"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/mbSubmit"
+                android:layout_below="@+id/rlToolbar"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                tools:itemCount="4"
+                tools:listitem="@layout/raw_service" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mbSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin_8"
+                android:text="@string/lbl_submit" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

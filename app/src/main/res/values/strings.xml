@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CHPL App</string>
+
+    <string name="msg_try_again">Try again after some time..</string>
+    <string name="internet_not_available">Internet not available.</string>
+    <string name="validation_session_expired">Session expired</string>
+    <string name="lbl_add">Add</string>
+    <string name="lbl_book_service">Book Service</string>
+    <string name="lbl_submit">Submit</string>
+    <string name="lbl_0">00</string>
+    <string name="lbl_order_summary">Order Summary</string>
+    <string name="lbl_place_order">Place Order</string>
+    <string name="lbl_select_clothes">Select Clothes</string>
+    <string name="lbl_cart_summary">Cart Summary</string>
+</resources>
